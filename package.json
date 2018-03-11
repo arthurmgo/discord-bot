@@ -1,0 +1,24 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "Um simples bot para discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurmgo/discord-bot.git"
+  },
+  "author": "Arthur Miranda Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurmgo/discord-bot/issues"
+  },
+  "homepage": "https://github.com/arthurmgo/discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "giphy-js-sdk-core": "^1.0.3",
+    "wolfram-alpha-api": "^0.2.1"
+  }
+}
