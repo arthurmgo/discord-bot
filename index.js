@@ -4,6 +4,7 @@ import WolframAlphaAPI from "wolfram-alpha-api";
 import GphApiClient from "giphy-js-sdk-core";
 import { writeFile } from "fs";
 
+//https://discordapp.com/oauth2/authorize?client_id=422530011912732682&scope=bot
 
 const client = new Client();
 client.login(token);
