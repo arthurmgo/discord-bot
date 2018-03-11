@@ -1,15 +1,15 @@
-const Discord = require("discord.js");
-const config = require("./config.json");
-const WolframAlphaAPI = require('wolfram-alpha-api');
-const GphApiClient = require('giphy-js-sdk-core');
-const fs = require("fs")
+import { Client } from "discord.js";
+import config, { token, wolframtoken, giphytoken, prefix } from "./config.json";
+import WolframAlphaAPI from "wolfram-alpha-api";
+import GphApiClient from "giphy-js-sdk-core";
+import { writeFile } from "fs";
 
 
-const client = new Discord.Client();
-client.login(config.token);
+const client = new Client();
+client.login(token);
 
-const waApi = WolframAlphaAPI(config.wolframtoken);
-const clientGph = GphApiClient(config.giphytoken);
+const waApi = WolframAlphaAPI(wolframtoken);
+const clientGph = GphApiClient(giphytoken);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -17,7 +17,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
 
-  const args = msg.content.slice(config.prefix.length).trim().split(/ +/g);
+  const args = msg.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
   switch (command) {
@@ -29,8 +29,8 @@ client.on('message', msg => {
       break;
     case "prefix" :
       let newPrefix = msg.content.split(" ").slice(1, 2)[0];
-      config.prefix = newPrefix;
-      fs.writeFile("./config.json", JSON.stringify(config), (err) => console.error);
+          prefix = newPrefix;
+          writeFile("./config.json", JSON.stringify(config), (err) => console.error);
       break;
     case "math" : 
       let op = args.join(' ')
