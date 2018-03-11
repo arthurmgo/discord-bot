@@ -19,6 +19,6 @@
   "dependencies": {
     "discord.js": "^11.3.2",
     "giphy-js-sdk-core": "^1.0.3",
-    "wolfram-alpha-api": "^0.2.1"
+    "wolfram-alpha-api": "https://products.wolframalpha.com/api/libraries/javascript/wolfram-alpha-api-1.0.0-rc.1.tgz"
   }
 }
