@@ -1,6 +1,6 @@
 {
-    "token": "NDIyNTMwMDExOTEyNzMyNjgy.DYdHRA.cpXkzLeEoZNkp8vzPoDrkVsa31U",
+    "token": "DISCORD_TOKEN",
     "prefix": "%",
-    "wolframtoken": "84X7EG-7W9L29PPG6",
-    "giphytoken": "NMoVNE2EIQvN5iTmk7hVZzGjS676zVsl"
+    "wolframtoken": "WOLFRAM_TOKEN",
+    "giphytoken": "GIPHY_TOKEN"
 }
